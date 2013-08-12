@@ -11,8 +11,30 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style type="text/css">
+   #layer1 {
+    z-index: 1; /* Порядок слоев */
+    width: 100%; /* Ширина слоя с фоном */
+    height: 100%; /* Высота слоя с фоном */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Положение от левого края окна */
+    top: 0; /* Положение от верхнего края */
+   }
+   #layer2 {
+    position: absolute; /* Абсолютное позиционирование */
+    z-index: 2; /* Порядок слоев */
+   }
+  </style>
   </head>
   <body>
+ 
+ <div id="layer1">
+    <img src="http://h.mfcimg.com/livesnap320/?user=114695027" width="100%" alt="">
+  </div>
+ 
+ 
+ <div id="layer2">
+
     <div class="wrapper">
       <header>
         <h1>Dr04.github.com</h1>
@@ -83,6 +105,6 @@ $ git checkout gh-pages
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+     </div>
   </body>
 </html>
